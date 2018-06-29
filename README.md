@@ -7,6 +7,10 @@
 * OAuth 2.0 [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
 * OpenId Connect (OIDC) [http://openid.net/developers/specs/](http://openid.net/developers/specs/)
 
+### .NET
+
+* Use [NodaTime](https://nodatime.org/) for date/time handling
+
 ### Miscellaneous
 
 * Email validation regexp: `^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$` explanation: [http://www.regular-expressions.info/email.html](http://www.regular-expressions.info/email.html)
