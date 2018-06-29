@@ -1,6 +1,6 @@
 ### Specifications
 
-* JSON https://tools.ietf.org/html/rfc7159
+* JSON [https://tools.ietf.org/html/rfc7159] (https://tools.ietf.org/html/rfc7159)
 * JSON Web Token (JWT) https://tools.ietf.org/html/rfc7519
 * JWT Best Practices (draft) https://tools.ietf.org/html/draft-ietf-oauth-jwt-bcp-00
 * OAuth 2.0 https://tools.ietf.org/html/rfc6749
