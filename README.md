@@ -17,3 +17,7 @@
 * Email validation regexp: `^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$` explanation: [http://www.regular-expressions.info/email.html](http://www.regular-expressions.info/email.html)
 * GMT, CET, CEST, WET, WEST etc are not time zones
 * Microsoft REST API Guidelines [https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
+
+### Next
+ * .NET resilience and transient-fault-handling library [http://www.thepollyproject.org/](http://www.thepollyproject.org/)
+ * Http Client librabries [https://github.com/reactiveui/refit](https://github.com/reactiveui/refit) and [https://flurl.io/](https://flurl.io/)
