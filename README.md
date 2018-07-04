@@ -12,8 +12,8 @@
 
 * Use [NodaTime](https://nodatime.org/) for date/time handling
 
-### Miscellaneous
-
+### MiscellaneousE
+* When building API to filter by datetime, Start should be included, but End should not: `[Start, End)`. No need to do this when filtering by dates only (no time)
 * Email validation regexp: `^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$` explanation: [http://www.regular-expressions.info/email.html](http://www.regular-expressions.info/email.html)
 * GMT, CET, CEST, WET, WEST etc are not time zones
 * Microsoft REST API Guidelines [https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
