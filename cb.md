@@ -6,6 +6,7 @@
 * Create an account, make possible to set an ID of an account
 * Make a transaction against an account (deposit or withdrawal)
 * Calculate balance for an account
+* Get available balance (hence how much can be withdrawn)
 * Get transactions
 
 ## Code
@@ -24,3 +25,4 @@
 * Introduce users
 * Bookkeping
 * Implement transfering between accounts
+* Implement locked balance - minimum amount that should stay on an account (invetigate how it influance on MinBalance or vice versus)
