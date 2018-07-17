@@ -20,7 +20,7 @@
 
 ### Usefulle terms
 
-* Race Condition (https://en.wikipedia.org/wiki/Race_condition)[https://en.wikipedia.org/wiki/Race_condition]
+* Race Condition (https://en.wikipedia.org/wiki/Race_condition)[https://en.wikipedia.org/wiki/Race_condition] (check-then-act)
 
 ### Next
  * .NET resilience and transient-fault-handling library [http://www.thepollyproject.org/](http://www.thepollyproject.org/)
