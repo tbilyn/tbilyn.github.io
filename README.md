@@ -18,6 +18,10 @@
 * GMT, CET, CEST, WET, WEST etc are not time zones
 * Microsoft REST API Guidelines [https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
 
+### Usefulle terms
+
+* Race Condition (https://en.wikipedia.org/wiki/Race_condition)[https://en.wikipedia.org/wiki/Race_condition]
+
 ### Next
  * .NET resilience and transient-fault-handling library [http://www.thepollyproject.org/](http://www.thepollyproject.org/)
  * Http Client librabries [https://github.com/reactiveui/refit](https://github.com/reactiveui/refit) and [https://flurl.io/](https://flurl.io/)
