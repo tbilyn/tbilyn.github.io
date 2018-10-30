@@ -18,7 +18,7 @@
 * GMT, CET, CEST, WET, WEST etc are not time zones
 * Microsoft REST API Guidelines [https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
 
-### Usefulle terms
+### Useful terms
 
 * Race Condition [https://en.wikipedia.org/wiki/Race_condition](https://en.wikipedia.org/wiki/Race_condition) (check-then-act)
 
