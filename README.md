@@ -25,4 +25,4 @@
 ### Next
  * .NET resilience and transient-fault-handling library [http://www.thepollyproject.org/](http://www.thepollyproject.org/)
  * Http Client librabries [https://github.com/reactiveui/refit](https://github.com/reactiveui/refit) and [https://flurl.io/](https://flurl.io/)
- * [Http Correlation Protocol] (https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/HttpCorrelationProtocol.md)
+ * [Http Correlation Protocol](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/HttpCorrelationProtocol.md)
