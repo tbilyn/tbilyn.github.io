@@ -17,6 +17,8 @@
 * Email validation regexp: `^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$` explanation: [http://www.regular-expressions.info/email.html](http://www.regular-expressions.info/email.html)
 * GMT, CET, CEST, WET, WEST etc are not time zones
 * Microsoft REST API Guidelines [https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
+* [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+* [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 
 ### Useful terms
 
