@@ -1,0 +1,3 @@
+upload_flags =
+    -c
+    set CPUTAPID 0x2ba01477
