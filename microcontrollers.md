@@ -8,8 +8,8 @@ SRAM, GPR and IO registers are not persistent, data is lost when power is off, b
 Arithmetic Logic Unit (ALU) is a block that can perform arithmetic and logical operations.
 A program mainly does those arithmetic and logical operations, so when you write a program you want it to do those operations on some particular data.
 
-The architecture of microprocessors is such, that it can perform arithmetic and logical operations only with data stored in GPRsor with operands in an instruction. So you have to put data into GPR or in instruction before you can apply arithmetic or logical operation on that data.
-Also, there is a limit on how many GPR can be there, that’s also part of restrictions from hardware and architecture. So you can not store a large amount of data in those registers. That’s why you have to move data into GPR only when you need it, and move away when you don’t, so that you have a place for other data that you want to perform next operation on. 
+The architecture of microprocessors is such, that it can perform arithmetic and logical operations only with data stored in GPRs or with operands in an instruction. So you have to put data into GPR or in instruction before you can apply arithmetic or logical operation on that data.
+Also, there is a limit on how many GPRs can be there, that’s also part of restrictions from hardware and architecture. So you can not store a large amount of data in those registers. That’s why you have to move data into GPR only when you need it, and move away when you don’t, so that you have a place for other data that you want to perform next operation on. 
 When you move data away from GPR you place it in SRAM. It is usually much bigger than GPR and you can store much more data there. So the common workflow is the following:
 * load from SRAM into GPR (into one or more registers)
 * operate on those GPR
