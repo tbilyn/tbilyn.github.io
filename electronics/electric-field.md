@@ -4,3 +4,5 @@ E = F/q, units: newtons per coulomb
 ```
 
 Electric constant (epsilon nought) = 8.8541878128(13)×10−12 F⋅m−1 (farads per metre)
+
+Coulomb's constant (ke ≈ 8.99×109 N⋅m2⋅C−2)
