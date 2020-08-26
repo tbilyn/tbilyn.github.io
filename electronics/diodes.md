@@ -1,3 +1,4 @@
+## Basics
 Diodes allow current to flow only in one direction.
 
 They have to terminals: **anode** (positive) and **cathode** (negative). Conventional current can flow from anode to cathode (forward direction), but not the other direction (idelally).
@@ -16,7 +17,7 @@ The i-v curve of a diode is entirely non-linear.
 ### Electrical Characterisitcs
 
 **Forward voltage (V<sub>F</sub>)** - minimal voltage that should be applied across a diode to allow the flow of the current. 
-That's also a voltage drop cross a diode. V<sub>F</sub> is sometimes called either the cut-in voltage or on-voltage. 
+That's can also be seen as a voltage drop cross a diode. V<sub>F</sub> is sometimes called either the cut-in voltage or on-voltage. 
 Forward voltage depends on what semiconductor material diode is made out of: a silicon diode will have a V<sub>F</sub> around 0.6-1V, a germanium-based - around 0.3V. 
 V<sub>F</sub> also depends on a type of a diode: LEDs can have much larger and Schottky diodes are designed specifically to have a much lower-than-usual forward voltage.
 
@@ -27,7 +28,18 @@ Diode can dissipate only so much power (just as any electrical component).
 * Power Dissipation
 * Reverse Voltage
 
+## Types of Diodes
+### Light-Emitting Diodes (LEDs)
+The V<sub>F</sub> rating of an LED is usually larger than that of a normal diode (1.2~3V), and it depends on the color the LED emits.
 
+### Schottky Diodes
+Schottky Diodes have a smaller forward voltage drop, which is usually between 0.15V and 0.45V. They'll still have a very large breakdown voltage though.
+
+### Zener Diodes
+Zener's are designed to have a very precise breakdown voltage, called the zener breakdown or zener voltage. When enough current runs in reverse through the zener, the voltage drop across it will hold steady at the breakdown voltage.
+
+### Photodiodes
+Photodiodes are specially constructed diodes, which capture energy from photons of light (see Physics, quantum) to generate electrical current. Kind of operating as an anti-LED
 
 ###### References
 
