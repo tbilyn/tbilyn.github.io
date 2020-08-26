@@ -31,6 +31,12 @@ Diode can dissipate only so much power (just as any electrical component).
 ## Types of Diodes
 ### Light-Emitting Diodes (LEDs)
 The V<sub>F</sub> rating of an LED is usually larger than that of a normal diode (1.2~3V), and it depends on the color the LED emits.
+#### Calculating Current Limiting Resistor Value for LED
+R = (V<sub>S</sub> - V<sub>F</sub>) / I<sub>F</sub>
+
+* V<sub>S</sub> - supply voltage
+* V<sub>F</sub> - forward voltage of a LED
+* I<sub>F</sub> - current you would like to flow through a LED
 
 ### Schottky Diodes
 Schottky Diodes have a smaller forward voltage drop, which is usually between 0.15V and 0.45V. They'll still have a very large breakdown voltage though.
