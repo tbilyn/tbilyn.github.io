@@ -5,3 +5,5 @@
 * [SWAG (scientific wild-ass guess)](https://en.wikipedia.org/wiki/Scientific_wild-ass_guess)
 
 * There are only two hard things in Computer Science: cache invalidation and naming things. - Phil Karlton
+
+* Premature Optimization Is the Root of All Evil
