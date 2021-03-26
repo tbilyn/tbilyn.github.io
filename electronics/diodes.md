@@ -47,6 +47,10 @@ Zener's are designed to have a very precise breakdown voltage, called the zener 
 ### Photodiodes
 Photodiodes are specially constructed diodes, which capture energy from photons of light (see Physics, quantum) to generate electrical current. Kind of operating as an anti-LED
 
+## Application
+### Flywheel diode
+Is placed in parallel with inductive load in order to protect the circuit from self generated back-emf.
+
 ###### References
 
 https://learn.sparkfun.com/tutorials/diodes/all
