@@ -56,12 +56,12 @@
 
         let bldcs = [
             {
-                name: "A",
+                name: "Example A",
                 kv: 100,
                 power: 1000
             },
             {
-                name: "B",
+                name: "Example B",
                 kv: 160,
                 power: 1000
             }
@@ -133,9 +133,9 @@
                                 <th scope="col" class="text-center">Kv</th>
                                 <th scope="col" class="text-center">Power (W)</th>
 
-                                <th scope="col" class="text-center">Voltage at Max</th>
-                                <th scope="col" class="text-center">RPM for <strong>48V</strong></th>
-                                <th scope="col" class="text-center">RPM for <strong>50V</strong></th>
+                                <th scope="col" class="text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Voltage that we can get when spining ICE at its max">Voltage at Max</th>
+                                <th scope="col" class="text-center" title="How fast should we spin the motors to get 48V, in brackets - percent of Max">RPM for <strong>48V</strong></th>
+                                <th scope="col" class="text-center" title="How fast should we spin the motors to get 50V, in brackets - percent of Max">RPM for <strong>50V</strong></th>
                             </tr>
                         </thead>
                         <tbody id="bigtabletbody">
@@ -148,6 +148,8 @@
 
         </div>
     </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 </body>
 
