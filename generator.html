@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Motors selection for Generator project</title>
+    <script>
+        let ices = [
+            {
+                name: "DLE 20",
+                hp: 2.5,
+                rpmmax: 9000,
+                idlerpm: 1750,
+                mass: 670 + 60 + 140
+            },
+            {
+                name: "DLE 20 RA",
+                hp: 2.5,
+                rpmmax: 9000,
+                idlerpm: 1750,
+                mass: 660 + 80 + 140
+            },
+            {
+                name: "DLE 30",
+                hp: 3.7,
+                rpmmax: 8500,
+                idlerpm: 1600,
+                mass: 920 + 60 + 130
+            },
+            {
+                name: "DLE 35 RA",
+                hp: 4.1,
+                rpmmax: 8500,
+                idlerpm: 1500,
+                mass: 930 + 120 + 140
+            },
+            {
+                name: "DLE 55",
+                hp: 5.5,
+                rpmmax: 8500,
+                idlerpm: 1500,
+                mass: 1330 + 140 + 140
+            },
+            {
+                name: "DLE 55 RA",
+                hp: 5.5,
+                rpmmax: 8500,
+                idlerpm: 1500,
+                mass: 1330 + 150 + 140
+            },
+        ];
+
+        let bldcs = [
+            {
+                name: "A",
+                kv: 100,
+                power: 1000
+            },
+            {
+                name: "B",
+                kv: 160,
+                power: 1000
+            }
+        ];
+
+
+        function Run() {
+            var icesdiv = document.getElementById("bigtabletbody");
+
+            for (let iceelem in ices) {
+                let ice = ices[iceelem];
+                var fl = false;
+                for (let bldcelem in bldcs) {
+
+
+                    let bldc = bldcs[bldcelem];
+
+                    let entry = "<tr>";
+
+                    if (fl === false) {
+                        entry += "<td rowspan=\"" + bldcs.length + "\">" + ice.name + "</td>";
+                        entry += "<td rowspan=\"" + bldcs.length + "\" class=\"text-center\">" + ice.hp + "</td>";
+                        entry += "<td rowspan=\"" + bldcs.length + "\" class=\"text-center\">" + Math.round(ice.hp * 745.6999) + "</td>";
+                        entry += "<td rowspan=\"" + bldcs.length + "\" class=\"text-center\">" + ice.rpmmax + "</td>";
+                        entry += "<td rowspan=\"" + bldcs.length + "\" class=\"text-center\">" + ice.idlerpm + "</td>";
+                        entry += "<td rowspan=\"" + bldcs.length + "\" class=\"text-center\">" + ice.mass + "</td>";
+                        fl = true;
+                    }
+                    entry += "<td>" + bldc.name + "</td>";
+                    entry += "<td class=\"text-center\">" + bldc.kv + "</td>";
+                    entry += "<td class=\"text-center\">" + bldc.power + "</td>";
+
+
+                    entry += "<td class=\"text-center\">" + (ice.rpmmax / bldc.kv).toFixed(1) + "</td>";
+                    entry += "<td class=\"text-center\">" + (48 * bldc.kv).toFixed(0) + "  <sub>(" + (48 * bldc.kv / ice.rpmmax * 100).toFixed(0) + "%)</sub>" + "</td>";
+                    entry += "<td class=\"text-center\">" + (50 * bldc.kv).toFixed(0) + " <sub>(" + (50 * bldc.kv / ice.rpmmax * 100).toFixed(0) + "%)</sub>" + "</td>";
+
+
+                    entry += "</tr>";
+                    icesdiv.innerHTML += (entry);
+
+
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="Run()">
+
+    <div class="container">
+        <div id="icesdiv">
+            <h2>ICEs and BLDCs combinations</h2>
+
+            <div class="row">
+                <div class="col">
+
+                    <table class="table table-hover align-middle" id="bigtable">
+                        <thead>
+                            <tr>
+                                <th scope="col">ICE Name</th>
+                                <th scope="col" class="text-center">Horse Power</th>
+                                <th scope="col" class="text-center">Power (W)</th>
+                                <th scope="col" class="text-center">RPM, max power</th>
+                                <th scope="col" class="text-center">RPM, idle</th>
+                                <th scope="col" class="text-center">Total mass</th>
+                                <th scope="col">BLDC Name</th>
+                                <th scope="col" class="text-center">Kv</th>
+                                <th scope="col" class="text-center">Power (W)</th>
+
+                                <th scope="col" class="text-center">Voltage at Max</th>
+                                <th scope="col" class="text-center">RPM for <strong>48V</strong></th>
+                                <th scope="col" class="text-center">RPM for <strong>50V</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody id="bigtabletbody">
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
